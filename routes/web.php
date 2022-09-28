@@ -13,6 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+//* Gestisco la route tramite il controller PageController, al metodo index().
+Route::get('/', 'PageController@index')->name('homePage');
