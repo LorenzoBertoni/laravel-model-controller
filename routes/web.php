@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,4 @@ use Illuminate\Support\Facades\Route;
 
 //* Gestisco la route tramite il controller PageController, al metodo index().
 Route::get('/', 'PageController@index')->name('homePage');
+Route::get('/allFilms', 'PageController@loadMore')->name('loadMore');
